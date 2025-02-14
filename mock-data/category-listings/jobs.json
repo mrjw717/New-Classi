@@ -1,0 +1,14 @@
+[
+  {
+    "id": "job-1",
+    "title": "Software Engineer",
+    "description": "Full-time position, competitive salary",
+    "location": "Austin, TX"
+  },
+  {
+    "id": "job-2",
+    "title": "Marketing Manager",
+    "description": "Experienced marketing professional needed",
+    "location": "Denver, CO"
+  }
+]

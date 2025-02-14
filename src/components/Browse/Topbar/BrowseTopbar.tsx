@@ -1,7 +1,9 @@
 // src/components/Browse/Topbar/BrowseTopbar.tsx
 import React, { useState } from 'react';
-import { Home, Search, MapPin, List, Grid } from 'lucide-react';
+import { Home, Search, List, Grid } from 'lucide-react';
 import { theme } from '../../../theme/theme';
+import SortButton from './SortButton';
+import LocationDropdown from './LocationDropdown';
 
 const BrowseTopbar: React.FC = () => {
   const [activeButton, setActiveButton] = useState<'search' | 'location' | 'list' | 'grid'>('search');
@@ -44,11 +46,16 @@ const BrowseTopbar: React.FC = () => {
     return 'white';
   };
 
+  const handleSortClick = () => {
+    // Add sort logic here
+    console.log('Sort button clicked');
+  };
+
   return (
-    <div className="bg-white py-4 shadow-md">
-      <div className="flex items-center" style={{ maxWidth: '100%' }}>
+    <div className="bg-white py-4">
+      <div className="flex items-center justify-between w-full">
         {/* Logo Area */}
-        <div className="w-64">
+        <div className="max-w-sidebar min-w-sidebar">
           <a
             href="/"
             className="text-2xl font-bold"
@@ -67,44 +74,51 @@ const BrowseTopbar: React.FC = () => {
           <input
             type="text"
             placeholder="Search listings..."
-            className="border rounded-md py-2 px-4 mr-2 w-full"
+            className="border rounded-md py-2 px-4 w-full rounded-r-none"
+            style={{ borderRight: 'none' }}
           />
         </div>
 
         {/* Icons (Right-Aligned) */}
-        <div className="flex">
+        <div className="flex items-center">
           <button
             className="font-bold py-2 px-4 rounded-md"
             style={{
-              ...getButtonStyle('search'),
+              ...theme.buttons.primaryActive,
               display: 'inline-flex',
               alignItems: 'center',
+              borderTopLeftRadius: '0',
+              borderBottomLeftRadius: '0',
             }}
             onClick={() => handleButtonClick('search')}
           >
             <Search size={20} style={{ display: 'inline-block', color: getIconColor('search') }} />
           </button>
 
+          {/* Vertical Line */}
+          <div className="h-6 w-px bg-gray-300 mx-2"></div>
+
           {/* Location Button */}
-          <button
-            className="font-bold ml-2"
-            style={{
-              ...getButtonStyle('location'),
-              display: 'inline-flex',
-              alignItems: 'center',
-            }}
-            onClick={() => handleButtonClick('location')}
-          >
-            <MapPin size={20} style={{ display: 'inline-block', color: getIconColor('location') }} />
-          </button>
+          <LocationDropdown getButtonStyle={getButtonStyle} getIconColor={getIconColor} />
+
+          {/* Vertical Line */}
+          <div className="h-6 w-px bg-gray-300 mx-2"></div>
 
           {/* Sort Button */}
+          <SortButton onClick={handleSortClick} />
+
+          {/* Vertical Line */}
+          <div className="h-6 w-px bg-gray-300 mx-2"></div>
+
+          {/* List View Button */}
           <button
-            className="font-bold ml-2"
+            className="font-bold rounded-r-none ml-2"
             style={{
               ...getButtonStyle('list'),
               display: 'inline-flex',
               alignItems: 'center',
+              borderTopRightRadius: '0',
+              borderBottomRightRadius: '0',
             }}
             onClick={() => handleButtonClick('list')}
           >
@@ -113,11 +127,13 @@ const BrowseTopbar: React.FC = () => {
 
           {/* Grid View Button */}
           <button
-            className="font-bold ml-2"
+            className="font-bold rounded-l-none"
             style={{
               ...getButtonStyle('grid'),
               display: 'inline-flex',
               alignItems: 'center',
+              borderTopLeftRadius: '0',
+              borderBottomLeftRadius: '0',
             }}
             onClick={() => handleButtonClick('grid')}
           >

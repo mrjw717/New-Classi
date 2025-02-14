@@ -1,0 +1,143 @@
+{
+  "Vehicles": [
+    {
+      "id": "vehicle-1",
+      "title": "2020 Toyota Camry",
+      "description": "Great condition, low mileage",
+      "price": 22000,
+      "location": "Los Angeles, CA"
+    },
+    {
+      "id": "vehicle-2",
+      "title": "2018 Honda Civic",
+      "description": "Well-maintained, reliable car",
+      "price": 18000,
+      "location": "New York, NY"
+    }
+  ],
+  "Real Estate": [
+    {
+      "id": "real-estate-1",
+      "title": "2 Bedroom Apartment",
+      "description": "Spacious apartment in downtown area",
+      "price": 2500,
+      "location": "Chicago, IL"
+    },
+    {
+      "id": "real-estate-2",
+      "title": "3 Bedroom House",
+      "description": "Beautiful house with a large backyard",
+      "price": 350000,
+      "location": "Houston, TX"
+    }
+  ],
+  "Electronics": [
+    {
+      "id": "electronics-1",
+      "title": "iPhone 13 Pro",
+      "description": "Like new, unlocked",
+      "price": 900,
+      "location": "San Francisco, CA"
+    },
+    {
+      "id": "electronics-2",
+      "title": "Samsung 4K TV",
+      "description": "65-inch, excellent condition",
+      "price": 700,
+      "location": "Miami, FL"
+    }
+  ],
+  "Furniture": [
+    {
+      "id": "furniture-1",
+      "title": "Leather Sofa",
+      "description": "Comfortable and stylish",
+      "price": 500,
+      "location": "Seattle, WA"
+    },
+    {
+      "id": "furniture-2",
+      "title": "Dining Table Set",
+      "description": "Includes table and four chairs",
+      "price": 300,
+      "location": "Boston, MA"
+    }
+  ],
+  "Jobs": [
+    {
+      "id": "job-1",
+      "title": "Software Engineer",
+      "description": "Full-time position, competitive salary",
+      "location": "Austin, TX"
+    },
+    {
+      "id": "job-2",
+      "title": "Marketing Manager",
+      "description": "Experienced marketing professional needed",
+      "location": "Denver, CO"
+    }
+  ],
+  "Services": [
+    {
+      "id": "service-1",
+      "title": "Plumbing Services",
+      "description": "Reliable plumbing services",
+      "price": 50,
+      "location": "Phoenix, AZ"
+    },
+    {
+      "id": "service-2",
+      "title": "Tutoring Services",
+      "description": "Experienced tutor for all subjects",
+      "price": 30,
+      "location": "Philadelphia, PA"
+    }
+  ],
+  "Clothing": [
+    {
+      "id": "clothing-1",
+      "title": "Designer Dress",
+      "description": "Elegant dress for special occasions",
+      "price": 100,
+      "location": "Atlanta, GA"
+    },
+    {
+      "id": "clothing-2",
+      "title": "Leather Jacket",
+      "description": "Stylish leather jacket for men",
+      "price": 150,
+      "location": "Minneapolis, MN"
+    }
+  ],
+  "Books": [
+    {
+      "id": "book-1",
+      "title": "The Great Gatsby",
+      "description": "Classic novel by F. Scott Fitzgerald",
+      "price": 10,
+      "location": "Portland, OR"
+    },
+    {
+      "id": "book-2",
+      "title": "To Kill a Mockingbird",
+      "description": "Pulitzer Prize-winning novel",
+      "price": 12,
+      "location": "San Diego, CA"
+    }
+  ],
+  "Announcements": [],
+  "FREE": [],
+  "Fitness Equipment": [],
+  "Home and Garden": [],
+  "Hunting and Fishing": [],
+  "Industrial": [],
+  "Livestock": [],
+  "Musical Instruments": [],
+  "Outdoors and Sporting": [],
+  "Recreational Vehicles": [],
+  "Tickets": [],
+  "Toys": [],
+  "Water Sports": [],
+  "Weddings": [],
+  "Rentals": []
+}

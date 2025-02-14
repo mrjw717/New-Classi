@@ -10,6 +10,17 @@ const Home: React.FC = () => {
     <MainLayout appName="Classifinds">
       <HeroSection />
       <CategorySelector />
+      <div style={{ background: theme.colors.snowMist }}>
+        <hr style={{
+          height: '1px',
+          width: '70%',
+          margin: '0 auto',
+          opacity: 0.5,
+          filter: 'blur(3px)',
+          border: 'none',
+          backgroundColor: theme.colors.ashGrey,
+        }} />
+      </div>
       <BrowseSection />
     </MainLayout>
   );

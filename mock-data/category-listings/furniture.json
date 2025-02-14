@@ -1,0 +1,16 @@
+[
+  {
+    "id": "furniture-1",
+    "title": "Leather Sofa",
+    "description": "Comfortable and stylish",
+    "price": 500,
+    "location": "Seattle, WA"
+  },
+  {
+    "id": "furniture-2",
+    "title": "Dining Table Set",
+    "description": "Includes table and four chairs",
+    "price": 300,
+    "location": "Boston, MA"
+  }
+]

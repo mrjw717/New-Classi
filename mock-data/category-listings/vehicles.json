@@ -1,0 +1,16 @@
+[
+  {
+    "id": "vehicle-1",
+    "title": "2020 Toyota Camry",
+    "description": "Great condition, low mileage",
+    "price": 22000,
+    "location": "Los Angeles, CA"
+  },
+  {
+    "id": "vehicle-2",
+    "title": "2018 Honda Civic",
+    "description": "Well-maintained, reliable car",
+    "price": 18000,
+    "location": "New York, NY"
+  }
+]

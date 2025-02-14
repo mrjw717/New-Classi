@@ -2,6 +2,7 @@ import React from 'react';
 import { LucideIcon } from 'lucide-react';
 import { theme } from '../../theme/theme';
 import { Home } from 'lucide-react';
+import UserArea from './UserArea';
 
 interface NavbarProps {
   appName: string;
@@ -9,7 +10,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ appName }) => {
   return (
-    <nav className="bg-white py-4 shadow-md">
+    <nav className="bg-white py-4" style={{ boxShadow: theme.shadows.soft, zIndex: 10 }}>
       <div className="container mx-auto flex items-center justify-between">
         <a
           href="/"
@@ -23,25 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({ appName }) => {
           />
           {appName}
         </a>
-        <div>
-          <a
-            href="/login"
-            className="mr-4"
-            style={{ color: theme.colors.primary }}
-          >
-            Login
-          </a>
-          <a
-            href="/register"
-            className="font-bold py-2 px-6 rounded-md"
-            style={{
-              background: theme.colors.primaryGradient,
-              color: 'white',
-            }}
-          >
-            Register
-          </a>
-        </div>
+        <UserArea />
       </div>
     </nav>
   );

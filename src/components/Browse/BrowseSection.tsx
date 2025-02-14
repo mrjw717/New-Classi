@@ -1,17 +1,18 @@
 import React from 'react';
 import BrowseTopbar from './Topbar/BrowseTopbar';
 import FilterSidebar from './Sidebar/FilterSidebar';
+import { theme } from '../../theme/theme';
 
 const BrowseSection: React.FC = () => {
   return (
-    <div className="py-12">
-      <div className="mx-auto" style={{ maxWidth: '80%', marginLeft: '10%' }}>
+    <div className="pb-12" style={{ background: theme.colors.snowMistLightGradient }}>
+      <div className="mx-auto" style={{ maxWidth: '87%' }}>
         <BrowseTopbar />
-        <div className="flex">
-          <div className="w-1/5 pr-4">
+        <div className="flex flex-col md:flex-row">
+          <div className="max-w-sidebar min-w-sidebar">
             <FilterSidebar />
           </div>
-          <div className="w-4/5">
+          <div className="w-full">
             {/* Items Display Area */}
           </div>
         </div>

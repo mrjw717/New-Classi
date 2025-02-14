@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        'sidebar': '350px',
+      },
+      minWidth: {
+        'sidebar': '300px',
+      },
+      ringColor: {
+        DEFAULT: '#D1D5DB', // light grey
+      },
+    },
   },
   plugins: [],
 }
