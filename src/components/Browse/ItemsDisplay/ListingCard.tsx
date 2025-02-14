@@ -1,0 +1,1 @@
+// Listing Card component content

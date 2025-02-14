@@ -1,0 +1,1 @@
+// ViewTypeControls component content

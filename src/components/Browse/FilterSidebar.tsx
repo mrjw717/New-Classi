@@ -1,0 +1,1 @@
+// Filter Sidebar component content

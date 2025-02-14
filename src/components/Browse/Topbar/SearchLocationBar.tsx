@@ -1,0 +1,1 @@
+// SearchLocationBar component content
