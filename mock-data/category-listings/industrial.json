@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "industrial-1",
+    "title": "Welding Machine",
+    "description": "Used welding machine for sale",
+    "price": 400,
+    "location": "Phoenix, AZ",
+    "user_id": "456"
+  }
+]

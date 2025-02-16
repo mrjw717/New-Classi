@@ -4,13 +4,7 @@
     "title": "The Great Gatsby",
     "description": "Classic novel by F. Scott Fitzgerald",
     "price": 10,
-    "location": "Portland, OR"
-  },
-  {
-    "id": "book-2",
-    "title": "To Kill a Mockingbird",
-    "description": "Pulitzer Prize-winning novel",
-    "price": 12,
-    "location": "San Diego, CA"
+    "location": "Portland, OR",
+    "user_id": "456"
   }
 ]

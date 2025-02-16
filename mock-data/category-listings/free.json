@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "free-1",
+    "title": "Free Couch",
+    "description": "Old couch, but still usable. Pick up only.",
+    "price": 0,
+    "location": "Seattle, WA",
+    "user_id": "456"
+  }
+]

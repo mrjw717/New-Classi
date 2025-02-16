@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "wedding-1",
+    "title": "Wedding Dress",
+    "description": "Beautiful wedding dress, never worn",
+    "price": 500,
+    "location": "New York, NY",
+    "user_id": "789"
+  }
+]

@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "hunting-1",
+    "title": "Fishing Rod",
+    "description": "Like new fishing rod",
+    "price": 75,
+    "location": "Boise, ID",
+    "user_id": "123"
+  }
+]

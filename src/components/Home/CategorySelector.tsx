@@ -15,12 +15,12 @@ const allCategories = [
   { name: 'Announcements', color: theme.category.Announcements, emoji: '📢', type: 'regular' },
   { name: 'FREE', color: theme.category.FREE, emoji: '🎁', type: 'regular' },
   { name: 'Fitness Equipment', color: theme.category.FitnessEquipment, emoji: '🏋️', type: 'regular' },
-  { name: 'Home and Garden', color: theme.category.HomeAndGarden, emoji: '🏡', type: 'regular' },
-  { name: 'Hunting and Fishing', color: theme.category.HuntingAndFishing, emoji: '🎣', type: 'regular' },
+  { name: 'Home & Garden', color: theme.category.HomeAndGarden, emoji: '🏡', type: 'regular' },
+  { name: 'Hunting & Fishing', color: theme.category.HuntingAndFishing, emoji: '🎣', type: 'regular' },
   { name: 'Industrial', color: theme.category.Industrial, emoji: '🏭', type: 'regular' },
   { name: 'Livestock', color: theme.category.Livestock, emoji: '🐄', type: 'regular' },
   { name: 'Musical Instruments', color: theme.category.MusicalInstruments, emoji: '🎵', type: 'regular' },
-  { name: 'Outdoors and Sporting', color: theme.category.OutdoorsAndSporting, emoji: '🏕️', type: 'regular' },
+  { name: 'Outdoors & Sporting', color: theme.category.OutdoorsAndSporting, emoji: '🏕️', type: 'regular' },
   { name: 'Recreational Vehicles', color: theme.category.RecreationalVehicles, emoji: '🚐', type: 'regular' },
   { name: 'Tickets', color: theme.category.Tickets, emoji: '🎟️', type: 'regular' },
   { name: 'Toys', color: theme.category.Toys, emoji: '🧸', type: 'regular' },
@@ -35,6 +35,7 @@ const additionalCategories = allCategories.slice(10);
 const CategorySelector: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
   const categorySelectorRef = useRef<HTMLDivElement>(null);
+  const scope = useRef(null);
 
   const toggleShowAll = () => {
     setShowAll(!showAll);
@@ -58,12 +59,22 @@ const CategorySelector: React.FC = () => {
     },
     exit: {
       opacity: 0,
-      height: 0,
+      height: 'auto',
       transition: {
         duration: 0.5,
         ease: "easeInOut"
       }
     }
+  };
+
+  const cardSizePercentage = 85;
+  const textHorizontalPadding = '5%';
+  const cardWidthPercentage = '20%';
+  const iconTopPosition = '30%';
+  const titleTopPosition = '65%';
+
+  const replaceAnd = (title: string) => {
+    return title.replace('and', '&');
   };
 
   return (
@@ -73,19 +84,20 @@ const CategorySelector: React.FC = () => {
           {initialCategories.map((category, index) => (
             <div
               key={index}
-              className="w-1/5 p-4"
+              className={`p-4`}
+              style={{ width: cardWidthPercentage }}
             >
               <button
                 className="w-full relative rounded-md font-semibold flex flex-col items-center justify-center overflow-hidden transition-transform duration-200 hover:scale-105 shadow"
                 style={{
-                  background: category.color,
-                  color: 'white',
-                  paddingBottom: '70%', /* 16:9 aspect ratio */
+                  background: `linear-gradient(315deg, ${theme.category[category.name.replace('&', 'and')] ? theme.category[category.name.replace('&', 'and')] : category.color}, ${theme.colors.snowMist})`,
+                  color: 'black',
+                  paddingBottom: `${cardSizePercentage}%`, /* 1:1 aspect ratio */
                   boxShadow: theme.shadows.soft,
                 }}
               >
-                <span style={{ fontSize: '2.3em', position: 'absolute', top: '35%', left: '50%', transform: 'translate(-50%, -50%)', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>{category.emoji}</span>
-                <span style={{ fontSize: '1.1em', position: 'absolute', top: '75%', left: '50%', transform: 'translate(-50%, -50%)', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>{category.name}</span>
+                <span style={{ fontSize: '2.3em', position: 'absolute', top: iconTopPosition, left: '50%', transform: 'translate(-50%, -50%)', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>{category.emoji}</span>
+                <span style={{ fontSize: '1.1em', position: 'absolute', top: titleTopPosition, left: '50%', transform: 'translate(-50%, -50%)', textShadow: '2px 2px 4px rgba(0,0,0,0.3)', paddingLeft: textHorizontalPadding, paddingRight: textHorizontalPadding, whiteSpace: 'nowrap', textAlign: 'center' }}>{replaceAnd(category.name)}</span>
                 {category.type === 'realEstate' && (
                   <div className="absolute bottom-0 left-0 w-full flex" style={{ height: '20%', fontSize: '0.8em' }}>
                     <div className="w-1/2 flex items-center justify-center" style={{ background: theme.colors.primaryGradient, borderRight: '1px solid #ddd', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
@@ -100,31 +112,33 @@ const CategorySelector: React.FC = () => {
             </div>
           ))}
         </div>
+        
         <motion.div
           ref={scope}
           className="flex flex-wrap justify-center overflow-hidden"
           variants={containerVariants}
           initial="hidden"
-          animate="visible"
+          animate={showAll ? "visible" : "hidden"}
           exit="exit"
           style={{ width: '100%' }}
         >
           {additionalCategories.map((category, index) => (
             <div
               key={index}
-              className="w-1/5 p-4"
+              className={`p-4`}
+              style={{ width: cardWidthPercentage }}
             >
               <button
                 className="w-full relative rounded-md font-semibold flex flex-col items-center justify-center overflow-hidden transition-transform duration-200 hover:scale-105 shadow"
                 style={{
-                  background: category.color,
-                  color: 'white',
-                  paddingBottom: '56.25%', /* 16:9 aspect ratio */
+                  background: `linear-gradient(315deg, ${theme.category[category.name.replace('&', 'and')] ? theme.category[category.name.replace('&', 'and')] : category.color}, ${theme.colors.snowMist})`,
+                  color: 'black',
+                  paddingBottom: `${cardSizePercentage}%`, /* 1:1 aspect ratio */
                   boxShadow: theme.shadows.soft,
                 }}
               >
-                <span style={{ fontSize: '2.3em', position: 'absolute', top: '30%', left: '50%', transform: 'translate(-50%, -50%)', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>{category.emoji}</span>
-                <span style={{ fontSize: '1.1em', position: 'absolute', top: '70%', left: '50%', transform: 'translate(-50%, -50%)', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>{category.name}</span>
+                <span style={{ fontSize: '2.3em', position: 'absolute', top: iconTopPosition, left: '50%', transform: 'translate(-50%, -50%)', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>{category.emoji}</span>
+                <span style={{ fontSize: '1.1em', position: 'absolute', top: titleTopPosition, left: '50%', transform: 'translate(-50%, -50%)', textShadow: '2px 2px 4px rgba(0,0,0,0.3)', paddingLeft: textHorizontalPadding, paddingRight: textHorizontalPadding, whiteSpace: 'nowrap', textAlign: 'center' }}>{replaceAnd(category.name)}</span>
                 {category.type === 'realEstate' && (
                   <div className="absolute bottom-0 left-0 w-full flex" style={{ height: '20%', fontSize: '0.8em' }}>
                     <div className="w-1/2 flex items-center justify-center" style={{ background: theme.colors.primaryGradient, borderRight: '1px solid #ddd', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
@@ -139,6 +153,7 @@ const CategorySelector: React.FC = () => {
             </div>
           ))}
         </motion.div>
+        
         <div className="flex justify-end">
           <button
             className="flex items-center justify-center mt-4 text-gray-600 hover:text-gray-800 transition-colors duration-200"

@@ -7,3 +7,4 @@ export * from './ItemsDisplay/Gallery';
 export * from './ItemsDisplay/ListingCard';
 export { default as BrowseTopbar } from './Topbar/BrowseTopbar';
 export * from './Sidebar';
+export { default as ItemsDisplay } from './ItemsDisplay';

@@ -2,6 +2,7 @@ import React from 'react';
 import BrowseTopbar from './Topbar/BrowseTopbar';
 import FilterSidebar from './Sidebar/FilterSidebar';
 import { theme } from '../../theme/theme';
+import ItemsDisplay from './ItemsDisplay';
 
 const BrowseSection: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const BrowseSection: React.FC = () => {
             <FilterSidebar />
           </div>
           <div className="w-full">
-            {/* Items Display Area */}
+            <ItemsDisplay />
           </div>
         </div>
       </div>

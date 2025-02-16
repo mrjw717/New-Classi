@@ -70,7 +70,7 @@ const BrowseTopbar: React.FC = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="flex-grow">
+        <div className="flex-grow pl-6">
           <input
             type="text"
             placeholder="Search listings..."

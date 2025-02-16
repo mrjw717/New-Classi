@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "outdoors-1",
+    "title": "Camping Tent",
+    "description": "4-person camping tent, used once",
+    "price": 80,
+    "location": "Boulder, CO",
+    "user_id": "456"
+  }
+]

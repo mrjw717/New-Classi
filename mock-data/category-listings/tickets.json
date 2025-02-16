@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "ticket-1",
+    "title": "Concert Tickets",
+    "description": "Two tickets to a concert",
+    "price": 100,
+    "location": "Las Vegas, NV",
+    "user_id": "789"
+  }
+]

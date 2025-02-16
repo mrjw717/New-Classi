@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "water-1",
+    "title": "Kayak",
+    "description": "Two person kayak for sale",
+    "price": 300,
+    "location": "Orlando, FL",
+    "user_id": "456"
+  }
+]

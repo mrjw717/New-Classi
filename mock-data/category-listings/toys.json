@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "toy-1",
+    "title": "Lego Set",
+    "description": "New Lego set for sale",
+    "price": 60,
+    "location": "San Diego, CA",
+    "user_id": "012"
+  }
+]

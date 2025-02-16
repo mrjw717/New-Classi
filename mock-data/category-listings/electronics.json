@@ -4,13 +4,7 @@
     "title": "iPhone 13 Pro",
     "description": "Like new, unlocked",
     "price": 900,
-    "location": "San Francisco, CA"
-  },
-  {
-    "id": "electronics-2",
-    "title": "Samsung 4K TV",
-    "description": "65-inch, excellent condition",
-    "price": 700,
-    "location": "Miami, FL"
+    "location": "San Francisco, CA",
+    "user_id": "012"
   }
 ]

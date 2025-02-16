@@ -4,13 +4,7 @@
     "title": "2 Bedroom Apartment",
     "description": "Spacious apartment in downtown area",
     "price": 2500,
-    "location": "Chicago, IL"
-  },
-  {
-    "id": "real-estate-2",
-    "title": "3 Bedroom House",
-    "description": "Beautiful house with a large backyard",
-    "price": 350000,
-    "location": "Houston, TX"
+    "location": "Chicago, IL",
+    "user_id": "789"
   }
 ]

@@ -4,13 +4,7 @@
     "title": "Designer Dress",
     "description": "Elegant dress for special occasions",
     "price": 100,
-    "location": "Atlanta, GA"
-  },
-  {
-    "id": "clothing-2",
-    "title": "Leather Jacket",
-    "description": "Stylish leather jacket for men",
-    "price": 150,
-    "location": "Minneapolis, MN"
+    "location": "Atlanta, GA",
+    "user_id": "789"
   }
 ]

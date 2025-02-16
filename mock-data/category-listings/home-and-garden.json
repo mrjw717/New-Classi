@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "home-1",
+    "title": "Lawnmower",
+    "description": "Electric lawnmower in good condition",
+    "price": 150,
+    "location": "Denver, CO",
+    "user_id": "012"
+  }
+]

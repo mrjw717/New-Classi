@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "announcement-1",
+    "title": "Community Event",
+    "description": "Join us for a community cleanup event!",
+    "price": 0,
+    "location": "Local Park",
+    "user_id": "123"
+  }
+]

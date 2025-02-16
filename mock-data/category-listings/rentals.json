@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "rental-1",
+    "title": "Party Tent",
+    "description": "Party tent for rent",
+    "price": 50,
+    "location": "Miami, FL",
+    "user_id": "123"
+  }
+]

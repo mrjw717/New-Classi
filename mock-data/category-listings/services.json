@@ -4,13 +4,7 @@
     "title": "Plumbing Services",
     "description": "Reliable plumbing services",
     "price": 50,
-    "location": "Phoenix, AZ"
-  },
-  {
-    "id": "service-2",
-    "title": "Tutoring Services",
-    "description": "Experienced tutor for all subjects",
-    "price": 30,
-    "location": "Philadelphia, PA"
+    "location": "Phoenix, AZ",
+    "user_id": "456"
   }
 ]

@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "livestock-1",
+    "title": "Chickens",
+    "description": "Young chickens for sale",
+    "price": 5,
+    "location": "Raleigh, NC",
+    "user_id": "012"
+  }
+]

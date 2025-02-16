@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "fitness-1",
+    "title": "Treadmill",
+    "description": "Barely used treadmill for sale",
+    "price": 300,
+    "location": "Austin, TX",
+    "user_id": "123"
+  }
+]

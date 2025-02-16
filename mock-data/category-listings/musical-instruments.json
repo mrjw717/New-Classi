@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "musical-1",
+    "title": "Guitar",
+    "description": "Acoustic guitar in excellent condition",
+    "price": 200,
+    "location": "Nashville, TN",
+    "user_id": "123"
+  }
+]

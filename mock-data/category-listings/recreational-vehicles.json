@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "rv-1",
+    "title": "Camper Van",
+    "description": "Well-maintained camper van for sale",
+    "price": 15000,
+    "location": "Salt Lake City, UT",
+    "user_id": "012"
+  }
+]
