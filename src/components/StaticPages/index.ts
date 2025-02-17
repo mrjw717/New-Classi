@@ -1,0 +1,9 @@
+export { default as AboutUs } from '../../pages/StaticPages/About/AboutUs';
+    export { default as Careers } from '../../pages/StaticPages/About/Careers';
+    export { default as Press } from '../../pages/StaticPages/About/Press';
+    export { default as TermsOfService } from '../../pages/StaticPages/Legal/TermsOfService';
+    export { default as PrivacyPolicy } from '../../pages/StaticPages/Legal/PrivacyPolicy';
+    export { default as CookiePolicy } from '../../pages/StaticPages/Legal/CookiePolicy';
+    export { default as HelpCenter } from '../../pages/StaticPages/Support/HelpCenter';
+    export { default as SafetyCenter } from '../../pages/StaticPages/Support/SafetyCenter';
+    export { default as CommunityGuidelines } from '../../pages/StaticPages/Support/CommunityGuidelines';
